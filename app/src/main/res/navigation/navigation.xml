@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/blankFragment">
+    <fragment android:id="@+id/blankFragment2" android:name="org.d3ifcool4068.praasissment2.BlankFragment"
+              android:label="fragment_blank" tools:layout="@layout/fragment_blank">
+        <action android:id="@+id/action_blankFragment2_to_segitiga" app:destination="@id/segitiga"/>
+        <action android:id="@+id/action_blankFragment2_to_persegi" app:destination="@id/persegi"/>
+    </fragment>
+    <fragment android:id="@+id/persegi" android:name="org.d3ifcool4068.praasissment2.persegi"
+              android:label="fragment_persegi" tools:layout="@layout/fragment_persegi"/>
+    <fragment android:id="@+id/segitiga" android:name="org.d3ifcool4068.praasissment2.segitiga"
+              android:label="fragment_segitiga" tools:layout="@layout/fragment_segitiga"/>
+</navigation>
